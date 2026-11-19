@@ -31,7 +31,14 @@ Comparte el schema Oracle `FORO_APP` (tablas `TEMA` y `COMENTARIO`, campo `ESTAD
    ```
 3. `jwt.secret` idéntico al de `ms-usuarios` y `ms-foro`.
 
-`application.properties` no se versiona.
+En Docker/AWS: env `DB_*` / `JWT_*` y wallet desde S3. Playbook: [tertulia-ng](https://github.com/TriniCorvalan/tertulia-ng#despliegue-aws-academy-ec2--playbook).
+
+## Docker
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
 
 ## Ejecutar
 
